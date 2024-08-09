@@ -38,6 +38,9 @@ dependencies:
   wear_plus: ^1.2.0
   shake: ^2.2.0
   shake_gesture: ^1.0.5
+  sqflite: ^2.3.3+1
+  path: ^1.9.0
+  fl_chart: ^0.68.0
 
 dev_dependencies:
   flutter_test:

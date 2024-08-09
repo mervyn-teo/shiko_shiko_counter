@@ -17,8 +17,24 @@ class _donePageState extends State<donePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Reps done:'),
-            Text(arguments['shakeCount'].toString()),
+            const Text('Reps done:'),
+            Text(
+              arguments['shakeCount'].toString(),
+              style: const TextStyle(
+                      fontSize: 40,
+                      color: Colors.deepPurple,
+                    ),),
+            MaterialButton(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20)
+                    ),
+                  color: Colors.amberAccent,
+                  child: const Text('Another one'),
+                  onPressed: () {
+                    Navigator.of(context)
+                      .pushNamedAndRemoveUntil('/', (Route<dynamic> route) => false);                 
+                  },
+                  ),
           ],
         )
       )
