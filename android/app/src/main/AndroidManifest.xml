@@ -38,7 +38,7 @@
             android:value="2" />
         <meta-data
             android:name="dev.fluttercommunity.shake_gesture_android.SHAKE_FORCE"
-            android:value="2" />
+            android:value="5" />
         <meta-data
             android:name="dev.fluttercommunity.shake_gesture_android.MIN_NUM_SHAKES"
             android:value="1" />

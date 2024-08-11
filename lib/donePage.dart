@@ -34,7 +34,16 @@ class _donePageState extends State<donePage> {
                     Navigator.of(context)
                       .pushNamedAndRemoveUntil('/', (Route<dynamic> route) => false);                 
                   },
-                  ),
+            ),
+            MaterialButton(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20)
+              ),
+              color: Colors.amberAccent,
+              child: const Text('show charts'),
+              onPressed: () {
+              Navigator.pushNamed(context, '/charts');
+            })
           ],
         )
       )

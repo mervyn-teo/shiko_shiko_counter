@@ -41,6 +41,13 @@ class _MyAppState extends State<MyApp> {
               print(element['id']);
               print(element['reps']);
             }
+            // reset timer
+            setState(() {
+              startedText = 'start';
+              defaultTime = 5;
+              started = false;
+            });
+
             Navigator.pushNamed(
               context, 
               '/finished', 
@@ -91,7 +98,7 @@ class _MyAppState extends State<MyApp> {
                       if (started) {
                         startedText = 'start';
                         defaultTime = 5;
-                        timer.cancel();
+                        timer.cancel(); 
                         started = !started;
                       } else {
                         startedText = 'stop';
@@ -101,6 +108,15 @@ class _MyAppState extends State<MyApp> {
                     });
                   },
                   ),
+              MaterialButton(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20)
+                ),
+                color: Colors.amberAccent,
+                child: const Text('show charts'),
+                onPressed: () {
+                Navigator.pushNamed(context, '/charts');
+              })
               ],
             )
           ),
@@ -124,5 +140,4 @@ class _MyAppState extends State<MyApp> {
     );
     return database;
   }
-
 }
