@@ -1,6 +1,6 @@
 # shiko_shiko_counter
 
-An Wear OS application to measure your shiko shiko counts.
+An Wear OS application to measure your shiko shiko counts in 120 seconds.
 
 ## Intallation
 
