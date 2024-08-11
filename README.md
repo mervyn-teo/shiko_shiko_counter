@@ -1,16 +1,11 @@
 # shiko_shiko_counter
 
-A new Flutter project.
+An Wear OS application to measure your shiko shiko counts.
 
-## Getting Started
+## Intallation
 
-This project is a starting point for a Flutter application.
+This application is build for Wear OS 4.
 
-A few resources to get you started if this is your first Flutter project:
+Download the latest apk from [releases](https://github.com/mervyn-teo/shiko_shiko_counter/releases).
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
