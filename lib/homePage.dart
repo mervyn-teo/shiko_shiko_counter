@@ -13,7 +13,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   late Timer timer;
-  int defaultTime = 5;
+  int defaultTime = 120;
   int shakeCount = 0;
   bool started = false;
   String startedText = 'start';
@@ -44,7 +44,7 @@ class _MyAppState extends State<MyApp> {
             // reset timer
             setState(() {
               startedText = 'start';
-              defaultTime = 5;
+              defaultTime = 120;
               started = false;
             });
 
@@ -97,7 +97,7 @@ class _MyAppState extends State<MyApp> {
                     setState(() {
                       if (started) {
                         startedText = 'start';
-                        defaultTime = 5;
+                        defaultTime = 120;
                         timer.cancel(); 
                         started = !started;
                       } else {

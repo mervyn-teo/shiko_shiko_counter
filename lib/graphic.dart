@@ -73,8 +73,14 @@ class _chartState extends State<chart> {
                   ? snapshot.data! 
                   : LineChartBarData(spots: [])
                 ],
-                minX: snapshot.hasData ? minDate.toDouble() : 10,
-                maxX: snapshot.hasData ? maxDate.toDouble() : 10,
+                minX: snapshot.hasData 
+                  ? minDate.toDouble() 
+                  : 10,
+                maxX: snapshot.hasData 
+                ? minDate == maxDate  
+                  ? maxDate.toDouble()
+                  : maxDate.toDouble() + 10
+                : 10,
                 maxY: snapshot.hasData && maxReps != 0 ? maxReps.toDouble() : 1,
                 minY: 0,
               )
